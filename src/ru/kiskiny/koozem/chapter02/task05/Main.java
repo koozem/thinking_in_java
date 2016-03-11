@@ -4,7 +4,7 @@ public class Main {
 
     /** Упражнения 1-10
      *
-     * @autor koozem
+     * @param args блаблабла
      */
 
     public static void main(String[] args) {

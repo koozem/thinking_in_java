@@ -1,21 +1,38 @@
-package ru.kiskiny.koozem.chapter03.task10;
+package ru.kiskiny.koozem.chapter04.task19;
 
 import static net.mindview.util.Print.print;
 
 /**
  *
  */
-public class CombinationInBinary {
-    static final int x = 0x011;
+public class TernaryOutput {
+    static final int x = 0x09;
     static final int y = 0x10;
+
+    public static String ternary(int i){// TODO ternary in task19
+       String ter = "";
+        for (int j = 0; i > 1; j++)
+        if(i > 0) {
+            String s = (i % 2 == 1) ? "1" : "0";
+            ter += s;
+            i = i / 2;
+        }
+
+        //сначала проверка знака
+        //(i != 1) ? s += 1 : s+= 0;
+
+        return ter;
+    }
 
     /**
      * @param args program parameters
      * @see net.mindview.util.Print
      */
+
     public static void main(String[] args) {
 
-        print("x = " + Integer.toBinaryString(x));
+
+        print("x = " + ternary(x));
         print("y = " + Integer.toBinaryString(y));
         print("x & y = " + Integer.toBinaryString(x & y));
         print("x | y = " + Integer.toBinaryString(x | y));

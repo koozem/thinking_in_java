@@ -5,7 +5,7 @@ public class Main {
 
     /** Упражнения 1-10
      *
-     * @autor koozem
+     * @author koozem
      */
 
     int i;
