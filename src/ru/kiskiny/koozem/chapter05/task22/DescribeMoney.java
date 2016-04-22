@@ -8,11 +8,11 @@ import ru.kiskiny.koozem.chapter05.task21.Money;
 public class DescribeMoney {
     Money.Currency money; //ссылка на наименование из перечислений в классе Money
 
-    DescribeMoney(Money.Currency money){ //конструктор создаст класс с аргументом money
+    private DescribeMoney(Money.Currency money){ //конструктор создаст класс с аргументом money
         this.money = money;              //этот тип будет использован в методе describe
     }
 
-    public void describe(){
+    private void describe(){
 
         switch (money){
             case RUBLE:
